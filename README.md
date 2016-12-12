@@ -1,2 +1,2 @@
 # rubydium
-Learning ruby....
+Learning ruby
