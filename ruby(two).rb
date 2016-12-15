@@ -59,4 +59,11 @@ puts "".empty?
 
 # btw the name of the method itself is 'nil?' and 'empty?' i.e the question mark is a part of the name.
 
+puts "Enter name"
+naam = gets # chomp removes the trailing newline character from input
+puts "yuor naam es #{naam} hahaha"
+naam = naam.chomp
+puts "yuor naam es #{naam} hahaha"
 
+# reverse method reverses the string
+puts "taco".reverse
