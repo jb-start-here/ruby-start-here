@@ -39,6 +39,7 @@ puts anotherName
 # we can use double or single quotes to simplify
 mike = 'tyson'
 puts mike
+puts mike.capitalize
 mike = "wazowski"
 puts mike
 

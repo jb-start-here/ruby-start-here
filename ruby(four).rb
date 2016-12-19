@@ -85,6 +85,11 @@ a << "joel"
 # a -> ["joel",0,1,2,3,4,5,25,25,"joel"]
 a.uniq # or a.uniq!
 # a -> ["joel",0,1,2,3,4,5,25]
+a.join
+# => "joel01234525
+a.join(" ")
+# => "joel 0 1 2 3 4 5 25"
+
 
 puts "~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~"
 
@@ -105,6 +110,7 @@ for i in a
     puts i.even?
 end
 
+# more examples ->
 x = ["h","o","l","a"]
 for things in x
     puts "I am a #{things}"
@@ -115,9 +121,27 @@ x.each do |things|
     puts "I am a #{things}"
 end
 
+# select method
+# it works like filter in javascript
+puts a.select {|number| number.even?}
 
 
+# same can be done if by using  multiple other ways
+puts "==========="
+a.each do |i|
+    if i.even?
+        puts i
+    end
+end
+
+puts "==========="
+a.each {|i| puts i if i.even?} # check out the special syntax
 
 
+puts "==========="
 
-
+for i in a
+    if i.even?
+        puts i
+    end
+end
