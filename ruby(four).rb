@@ -124,6 +124,7 @@ end
 # select method
 # it works like filter in javascript
 puts a.select {|number| number.even?}
+# a.select returns an array ( subarray of a containing only even numbers)
 
 
 # same can be done if by using  multiple other ways

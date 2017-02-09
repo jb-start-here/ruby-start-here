@@ -66,7 +66,7 @@ end
 
 puts '---------------'
 15.downto(5) do |i|
-    puts "upto #{i}"
+    puts "downto #{i}"
 end
 
 

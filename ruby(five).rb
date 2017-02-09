@@ -17,7 +17,10 @@ end
 # theyre not variables in the sense that they dont usually store anything or point to any thing
 # theyre always preceded by a comma
 
-hash2 = {a:1,b:2,c:3,d:4}
+# like this -> {:a=>1, :b=>2, :c=>3, :d=>4}
+
+# this is a shorthand version of creating a hash with symbols a,b,c,d as keys
+hash2 = {a:1,b:2,c:3,d:4} 
 
 
 puts hash2
@@ -64,7 +67,7 @@ puts nums
 nums.select! do |x,y|
   y<=4
 end
-puts
+puts nums
 
 # -----------------------------Lesson-10---------------------------------
 # misc and looping using while/for/until/loop
@@ -73,7 +76,7 @@ puts
 puts 'big line of code '\
      ' and continuation of it'
 
-# -> one way to do it using loop keywork
+# -> one way to do it using loop keyword
 # loop do
 #   puts "All work and no play makes Jack a dull boy."
 # end
