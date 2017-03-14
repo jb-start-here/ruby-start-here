@@ -104,8 +104,8 @@ end
   puts "reverse iterating #{i}"
 end
 
-# There is a default method called block_given? from kerner object itself in ruby which is boolean which 
-# tells us whether block is gvien or not 
+# There is a default method called block_given? from kernel object itself in ruby which is boolean which 
+# tells us whether block is gvien or not
 
 class Array
   def reverse_iterate2
@@ -148,3 +148,40 @@ end
 crazy_method {|i| puts "closures are fun!!! #{i}"}
 
 # This gives us the feature of closures in ruby!!
+
+# -----------------------------Lesson-12----------------------------------
+# lambda expressions
+
+# lambda is a piece of code or a block of code that we write and store in a variable. we can execute the piece of code anytime
+# by call method
+
+
+l = lambda { return "lambda"}
+puts l.call
+
+lamb = lambda do |i|
+  # the last expression is always returned
+  "#{i} has been received by the lamb"
+end
+
+puts lamb.call 5
+
+lamb2  = lambda { |i| "#{i} has been received by the lamb" }
+
+puts lamb.call 5
+
+yoda = lambda do |word|
+  if word == "try"
+    "there is no try"
+  else
+    "do or do not"
+  end
+end
+
+puts yoda.call "what"
+puts yoda.call "try"
+
+# A lambda is a piece of code that you can store in a variable, and is an object. 
+# Block : The simplest explanation for a block is that it is a piece of code that can't be stored in a variable 
+# and isn't an object. It is, as a consequence, significantly faster than a lambda, 
+# but not as versatile and also one of the rare instances where Ruby's "everything is an object" rule is broken.
