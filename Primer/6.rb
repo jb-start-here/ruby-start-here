@@ -168,7 +168,7 @@ puts lamb.call 5
 
 lamb2  = lambda { |i| "#{i} has been received by the lamb" }
 
-puts lamb.call 5
+puts lamb2.call 5
 
 yoda = lambda do |word|
   if word == "try"
