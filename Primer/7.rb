@@ -13,7 +13,7 @@ person "kylo", fingers: :ten
 
 # In ruby 2.0+ we can use key word arguments to do away with fetching
 
-# Pass in arguments in any order, specify defaults
+# Can pass in arguments in any order, also specify defaults
 # if you dont pass in defaults then it becomes required arguments
 def another_person(name, age: 0, fingers: 10)
   p "name given is #{name}"
